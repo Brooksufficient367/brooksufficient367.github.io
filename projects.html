@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Aaron Havener</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">Aaron <span>Havener</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="resume-header">
+    <h1>Projects</h1>
+    <a href="assets/files/Aaron_Havener_Portfolio.pdf" class="btn secondary">Full Portfolio (PDF)</a>
+  </div>
+  <p>A selection of independent and academic robotics/controls projects. See the portfolio PDF above for full write-ups, CAD renders, and additional figures.</p>
+
+  <section>
+    <div class="card">
+      <h3>Educational CVT Robot for Haptic Teleoperation</h3>
+      <div class="meta">Senior Design Project</div>
+      <p>
+        Designed and developed an educational robot demonstrating the use of Continuously Variable
+        Transmissions (CVTs) in haptic robotics for teleoperation. A pair of steerable wheels mounted
+        on a rotating cylinder controls the motion of a scissor-lift linkage, allowing the end effector
+        to accurately trace programmable two-dimensional shapes.
+      </p>
+      <ul>
+        <li>Designed and implemented a MATLAB feedback control system derived from the system dynamics to accurately position the end effector while maintaining stable behavior for arbitrary user-defined trajectories.</li>
+        <li>Simultaneously computed two independent wheel steering angles using system constraints and inverse kinematics based on the desired end-effector position and scissor-linkage geometry.</li>
+        <li>Derived and tuned controller parameters accounting for hardware limitations, system dynamics, and performance requirements to achieve stable tracking.</li>
+      </ul>
+      <p><strong>Major design challenges:</strong> nonlinear system dynamics, determining required wheel/motor positions for desired 2D end-effector coordinates, and integrating sensors to measure desired vs. actual wheel position.</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/SCf1pLmJTnE" title="CVT Robot Simulation" allowfullscreen></iframe>
+      </div>
+      <ul class="tag-list">
+        <li>MATLAB</li><li>Feedback Control</li><li>Inverse Kinematics</li><li>SolidWorks</li><li>Mechanism Design</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Autonomous Nonholonomic Mobile Robot</h3>
+      <div class="meta">Independent / Coursework Project</div>
+      <p>
+        Designed and implemented autonomous navigation software for a nonholonomic mobile robot
+        using LiDAR-based mapping, path planning, and Pure Pursuit control &mdash; programming an RC
+        vehicle to navigate between user-defined goal points while avoiding static obstacles.
+      </p>
+      <ul>
+        <li>Implemented a breadth-first search path-planning algorithm with a goal-oriented heuristic to generate collision-free paths from mapped LiDAR data.</li>
+        <li>Developed Pure Pursuit steering logic and integrated perception with autonomous navigation.</li>
+        <li>Integrated and validated autonomous waypoint navigation and obstacle avoidance through real-world testing, enabling reliable navigation without operator intervention.</li>
+      </ul>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/MYD92z-kxPc" title="Mobile Robot Test Results 1" allowfullscreen></iframe>
+      </div>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/ahSgRSu2JDg" title="Mobile Robot Test Results 2" allowfullscreen></iframe>
+      </div>
+      <ul class="tag-list">
+        <li>LiDAR</li><li>Path Planning</li><li>Pure Pursuit</li><li>Autonomous Navigation</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Ball-and-Beam Feedback Control System</h3>
+      <div class="meta">Nonlinear Dynamic Control Simulator</div>
+      <p>
+        Developed a MATLAB and Simulink simulation of a nonlinear ball-and-plate system to model,
+        analyze, and validate feedback controller performance. A PD controller autonomously adjusts
+        the plate's tilt to stabilize the ball at user-defined reference positions.
+      </p>
+      <ul>
+        <li>Built a nonlinear dynamic simulation and feedback controller to stabilize the ball at user-defined reference positions.</li>
+        <li>Used root locus analysis to tune proportional and derivative gains, demonstrating the relationship between closed-loop pole locations and transient system response.</li>
+        <li>Verified controller stability by comparing open- and closed-loop responses and analyzing transient performance through simulation and animation.</li>
+      </ul>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/jnBz8RxaaRQ" title="Ball and Beam Simulation 1" allowfullscreen></iframe>
+      </div>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/1A4uXV-9MBE" title="Ball and Beam Simulation 2" allowfullscreen></iframe>
+      </div>
+      <ul class="tag-list">
+        <li>MATLAB</li><li>Simulink</li><li>Root Locus</li><li>PD Control</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Virtual Design &amp; Construction &mdash; Whiting-Turner</h3>
+      <div class="meta">Project Engineer / VDC Engineer Intern &middot; Summer 2024</div>
+      <p>
+        Supported engineering and construction operations across three active projects, including an
+        $18M flight simulator facility at NAS Whiting Field and a $200M cancer research building.
+      </p>
+      <ul>
+        <li>Reviewed engineering drawings (Bluebeam) and coordinated with subcontractors on a $50M project.</li>
+        <li>Performed interference and design checks of MEP systems in Navisworks to identify potential build issues before construction.</li>
+        <li>Maintained material procurement records, vendor tracking, and project schedules.</li>
+      </ul>
+      <ul class="tag-list">
+        <li>Navisworks</li><li>Bluebeam</li><li>MEP Coordination</li><li>Construction</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  &copy; 2026 Aaron Havener &middot; <a href="contact.html">Get in touch</a>
+</footer>
+
+</body>
+</html>
