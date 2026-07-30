@@ -189,6 +189,13 @@ section h2 {
   display: block;
 }
 
+.caption {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: -0.5rem 0 1rem;
+}
+
 .video-embed {
   position: relative;
   padding-bottom: 56.25%;
